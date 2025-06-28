@@ -98,16 +98,16 @@ export default function NameGenerator() {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 border border-china-red/30">
+    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-china-red/30 max-w-md mx-auto w-full"> // max-w-md和mx-auto让内容在手机和电脑都居中且不超屏
       <div className="mb-4">
         <label className="block text-lg font-semibold mb-2 text-china-red">
           Enter your English name
           <span className="ml-2 text-sm text-gray-500">输入你的英文名</span>
         </label>
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2"> 
           <input
             type="text"
-            className="flex-1 px-4 py-2 border-2 border-china-red rounded-lg focus:outline-none focus:ring-2 focus:ring-china-red/50 text-lg"
+            className="w-full sm:flex-1 px-4 py-3 border-2 border-china-red rounded-lg focus:outline-none focus:ring-2 focus:ring-china-red/50 text-base sm:text-lg mb-2 sm:mb-0"
             placeholder="e.g. Alice"
             value={englishName}
             onChange={handleInputChange}
@@ -115,7 +115,7 @@ export default function NameGenerator() {
             disabled={loading}
           />
           <button
-            className="bg-china-red hover:bg-red-700 text-white px-6 py-2 rounded-lg font-bold text-lg shadow"
+            className="w-full sm:w-auto bg-china-red hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold text-base sm:text-lg shadow transition-all duration-150"
             onClick={handleGenerate}
             disabled={loading}
           >
