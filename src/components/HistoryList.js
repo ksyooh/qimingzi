@@ -34,7 +34,7 @@ export default function HistoryList() {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 border border-china-red/20 mt-8">
       <h2 className="text-xl font-bold text-china-red mb-4">History / 历史生成记录</h2>
-      <ul className="space-y-4">
+      <ul className="flex flex-wrap gap-2 mt-2">
         {history.map((item, idx) => (
           <li key={item.englishName}>
             <div
@@ -48,7 +48,8 @@ export default function HistoryList() {
                 {item.names.map((n, i) => (
                   <span
                     key={i}
-                    className="bg-china-red/20 text-china-red font-bold px-3 py-1 rounded-full text-base"
+                    className="bg-china-red/20 text-china-red font-bold px-3 py-1 rounded-full text-sm sm:text-base break-words"
+                    style={{ minWidth: '56px', textAlign: 'center' }} // 保证标签最小宽度，移动端也不挤
                   >
                     {n.name}
                   </span>

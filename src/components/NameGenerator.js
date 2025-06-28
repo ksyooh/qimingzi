@@ -98,7 +98,7 @@ export default function NameGenerator() {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-china-red/30 max-w-md mx-auto w-full"> // max-w-md和mx-auto让内容在手机和电脑都居中且不超屏
+    <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-china-red/30 max-w-md mx-auto w-full">
       <div className="mb-4">
         <label className="block text-lg font-semibold mb-2 text-china-red">
           Enter your English name
