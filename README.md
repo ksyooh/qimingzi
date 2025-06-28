@@ -19,7 +19,7 @@
 
 ## API 参数说明 (API Parameters)
 - **API地址**：`https://api.deepseek.com/chat/completions`
-- **API Key**：`sk-61ba37c740fd4b86a0dcdce363ae05e2`
+- **API Key**：`YOUR_API_KEY`
 - **请求方式**：POST
 - **主要参数**：
   - `model`: 使用 deepseek-chat

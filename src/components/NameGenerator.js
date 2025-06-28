@@ -35,7 +35,7 @@ export default function NameGenerator() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer sk-61ba37c740fd4b86a0dcdce363ae05e2",
+          "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
         },
         body: JSON.stringify({
           model: "deepseek-chat",
